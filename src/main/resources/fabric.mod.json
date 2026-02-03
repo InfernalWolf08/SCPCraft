@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "scpcraft",
+  "version": "${version}",
+  "name": "SCPCraft",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/scpcraft/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.github.InfernalWolf.client.ScpcraftClient"
+    ],
+    "main": [
+      "com.github.InfernalWolf.Scpcraft"
+    ]
+  },
+  "mixins": [
+    "scpcraft.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
