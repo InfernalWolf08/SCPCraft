@@ -15,7 +15,11 @@
     ],
     "main": [
       "com.github.InfernalWolf.Scpcraft"
-    ]
+    ],
+    "server": [],
+    "fabric-datagen": [],
+    "fabric-gametest": [],
+    "preLaunch": []
   },
   "mixins": [
     "scpcraft.mixins.json"
