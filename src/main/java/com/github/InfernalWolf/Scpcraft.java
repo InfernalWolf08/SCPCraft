@@ -1,7 +1,9 @@
 package com.github.InfernalWolf;
 
+import com.github.InfernalWolf.effect.ModEffects;
 import com.github.InfernalWolf.entity.ModEntities;
 import com.github.InfernalWolf.entity.custom.SCP173Entity;
+import com.github.InfernalWolf.item.ModItems;
 import com.github.InfernalWolf.world.gen.ModEntitySpawns;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
@@ -21,6 +23,12 @@ public class Scpcraft implements ModInitializer {
 
         // Entity Spawns
         ModEntitySpawns.addSpawns();
+
+        // Items
+        ModItems.registerModItems();
+
+        // Status Effects
+        ModEffects.registerEffects();
 
         // Custom Sound
         Registry.register(Registries.SOUND_EVENT, new Identifier(MOD_ID, "scp173die"),
