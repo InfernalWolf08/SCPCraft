@@ -1,6 +1,7 @@
 package com.github.InfernalWolf.item;
 
 import com.github.InfernalWolf.Scpcraft;
+import com.github.InfernalWolf.block.ModBlocks;
 import com.github.InfernalWolf.item.custom.SCP005Item;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
@@ -19,6 +20,7 @@ public class ModItems {
     public static void registerModItems() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> {
             entries.add(SCP005);
+            entries.add(ModBlocks.SCP009);
         });
     }
 }

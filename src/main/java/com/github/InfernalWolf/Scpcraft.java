@@ -1,5 +1,6 @@
 package com.github.InfernalWolf;
 
+import com.github.InfernalWolf.block.ModBlocks;
 import com.github.InfernalWolf.effect.ModEffects;
 import com.github.InfernalWolf.entity.ModEntities;
 import com.github.InfernalWolf.entity.custom.SCP173Entity;
@@ -26,6 +27,9 @@ public class Scpcraft implements ModInitializer {
 
         // Items
         ModItems.registerModItems();
+
+        // Blocks
+        ModBlocks.registerModBlocks();
 
         // Status Effects
         ModEffects.registerEffects();
